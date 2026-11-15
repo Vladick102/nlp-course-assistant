@@ -1,0 +1,70 @@
+# All model IDs, paths and thresholds. Components read this via app/config.py — never hard-code.
+
+paths:
+  raw_dirs: {pok: pok, aks: aks, os: os}   # read-only course folders at repo root
+  converted: data/converted                # pptx/docx → pdf via LibreOffice
+  parsed: data/parsed
+  index: data/index
+  cache: data/cache
+  traces: logs/traces
+  prompts: prompts
+
+courses:
+  pok: {name_uk: "Принципи організації комп'ютерів", short: "ПОК", order: 1}
+  aks: {name_uk: "Архітектура комп'ютерних систем", short: "АКС", order: 2}
+  os:  {name_uk: "Операційні системи", short: "ОС", order: 3}
+
+llm:
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  timeout_s: 180              # free nemotron-3-ultra needs ~70 s + queueing; 90 s timed out (2026-11-15)
+  max_retries: 4
+  models:
+    # Runtime is STRICTLY FREE (user, 2026-11-15): no paid fallback. On quota/rate-limit errors the UI tells the user
+    # to change OPENROUTER_API_KEY or wait for the limit reset. Chosen by a 6-model free smoke test (reports/agent_log.md).
+    fast: inclusionai/ling-3.2-flash:free        # router+rewrite, gate tie-break, verifier
+    generator: inclusionai/ling-3.2-flash:free   # answers, logistics, navigation (~20 s, correct UA + citations)
+    vlm: anthropic/claude-haiku-5.5              # unused at runtime; bulk figure descriptions = Claude Code Haiku agents
+    judge: google/gemini-3.1-flash-lite          # eval only (offline); different family than generator
+  reasoning: {}                                  # free reasoning models: provider defaults; give them token headroom
+  min_max_tokens: 1500                           # reasoning tokens count against max_tokens → never request less
+  fallbacks:                                     # FREE models only — a paid model must never appear here
+    fast: [nvidia/nemotron-3-ultra-550b-a55b:free, google/gemma-4-31b-it:free]
+    generator: [nvidia/nemotron-3-ultra-550b-a55b:free, google/gemma-4-31b-it:free]
+    vlm: []
+    judge: []
+
+ingest:
+  render_dpi: 110
+  header_band: 0.09          # fraction of page height treated as header zone (Beamer)
+  footer_band: 0.07
+  repeat_ratio: 0.5          # line on > this share of pages ⇒ boilerplate
+  min_chars: 25              # below this and no figure ⇒ empty slide
+  vision:
+    min_image_area: 0.08     # raster image covering ≥ 8% of the page
+    min_drawings: 25         # vector drawing ops ⇒ diagram
+    low_text_chars: 120
+
+retrieval:
+  embed_model: BAAI/bge-m3
+  rerank_model: BAAI/bge-reranker-v2-m3
+  bm25_k: 30
+  dense_k: 30
+  rrf_k: 60
+  fused_k: 30
+  final_k: 6
+  use_reranker: true         # kept: R@1 0.76→0.85, MRR 0.84→0.91 (retrieval_2026-11-15_dev.json)
+  rerank_candidates: 10      # (10,256) ≈ 6 s/query on CPU; 30/512 was 20–35 s
+  rerank_max_length: 256
+  use_glossary: true
+
+gate:
+  rerank_threshold: 0.17     # dev sweep 2026-11-15: abstain P 0.82 R 0.92 F1 0.87, false-abstain 0.04 (n=145)
+  borderline: [0.05, 0.35]   # inside ⇒ ask the fast LLM
+
+chat:
+  history_turns: 4
+
+pipeline:
+  merged_router: true        # router + query rewrite in ONE free-model call (quota/latency)
+  verify: false              # citation verifier off by default at runtime (+1 call, ~20 s); UI checkbox / eval ablation

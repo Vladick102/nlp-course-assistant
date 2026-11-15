@@ -1,0 +1,72 @@
+{
+  "preset": "small",
+  "gold_source": {
+    "logistics": "unreviewed draft",
+    "qa": "unreviewed draft",
+    "unanswerable": "unreviewed draft"
+  },
+  "component": "e2e",
+  "split": "dev",
+  "run_id": "2026-11-15_nogit_1887d8e5_small",
+  "prompts": {
+    "answer": "2",
+    "gate": "1",
+    "judge_answer": "1",
+    "judge_figure": "1",
+    "logistics": "2",
+    "navigate": "1",
+    "rewrite": "1",
+    "route_rewrite": "1",
+    "router": "1",
+    "verify": "1",
+    "vlm_figure": "1"
+  },
+  "models": {
+    "fast": "inclusionai/ling-3.2-flash:free",
+    "generator": "inclusionai/ling-3.2-flash:free",
+    "vlm": "anthropic/claude-haiku-5.5",
+    "judge": "google/gemini-3.1-flash-lite"
+  },
+  "metrics": {
+    "n": 22,
+    "n_scored": 22,
+    "n_pending_judgment": 0,
+    "success_rate": {
+      "value": 0.7727272727272727,
+      "lo": 0.5909090909090909,
+      "hi": 0.9090909090909091,
+      "n": 22
+    },
+    "latency_s": {
+      "p50": 56.8565,
+      "p95": 145.8729,
+      "mean": 67.52881818181817
+    },
+    "calls_per_item": 1.8636363636363635,
+    "live_calls_per_item": 1.8181818181818181,
+    "total_calls": 41,
+    "total_live_calls": 40,
+    "models_served": {
+      "inclusionai/ling-3.2-flash:free": 36,
+      "nvidia/nemotron-3-ultra-550b-a55b:free": 5
+    },
+    "success_qa": {
+      "value": 0.75,
+      "lo": 0.5,
+      "hi": 1.0,
+      "n": 12
+    },
+    "success_unanswerable": {
+      "value": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 5
+    },
+    "success_logistics": {
+      "value": 0.6,
+      "lo": 0.2,
+      "hi": 1.0,
+      "n": 5
+    }
+  }
+}

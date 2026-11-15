@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-11-15_nogit_dead0146_small",
+  "config": {
+    "models": {
+      "fast": "inclusionai/ling-3.2-flash:free",
+      "generator": "inclusionai/ling-3.2-flash:free",
+      "vlm": "anthropic/claude-haiku-5.5",
+      "judge": "google/gemini-3.1-flash-lite"
+    },
+    "fallbacks": {
+      "fast": [
+        "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "google/gemma-4-31b-it:free"
+      ],
+      "generator": [
+        "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "google/gemma-4-31b-it:free"
+      ],
+      "vlm": [],
+      "judge": []
+    },
+    "prompts": {
+      "answer": "2",
+      "gate": "1",
+      "judge_answer": "1",
+      "judge_figure": "1",
+      "logistics": "2",
+      "navigate": "1",
+      "rewrite": "1",
+      "route_rewrite": "1",
+      "router": "1",
+      "verify": "1",
+      "vlm_figure": "1"
+    },
+    "pipeline": {
+      "merged_router": true,
+      "verify": false
+    },
+    "gate": {
+      "rerank_threshold": 0.15,
+      "borderline": [
+        0.05,
+        0.35
+      ]
+    },
+    "retrieval": {
+      "embed_model": "BAAI/bge-m3",
+      "rerank_model": "BAAI/bge-reranker-v2-m3",
+      "bm25_k": 30,
+      "dense_k": 30,
+      "rrf_k": 60,
+      "fused_k": 30,
+      "final_k": 6,
+      "use_reranker": true,
+      "use_glossary": true
+    },
+    "chat": {
+      "history_turns": 4
+    }
+  },
+  "preset": "small",
+  "split": "dev",
+  "gold_source": {
+    "router": "unreviewed draft"
+  },
+  "seed": 20261115
+}

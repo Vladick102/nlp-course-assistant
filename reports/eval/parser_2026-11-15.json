@@ -1,0 +1,1204 @@
+{
+ "date": "2026-11-15",
+ "gold_file": "eval/data/review/parse_gold.jsonl",
+ "gold": {
+  "n": 40,
+  "metrics": {
+   "ours": {
+    "token_f1": 0.8948,
+    "cer": 0.1312,
+    "boilerplate_leakage": 0.0,
+    "link_precision": 1.0,
+    "link_recall": 1.0
+   },
+   "baseline": {
+    "token_f1": 0.7061,
+    "cer": 0.393,
+    "boilerplate_leakage": 0.475,
+    "link_precision": 0.3889,
+    "link_recall": 0.2593
+   }
+  },
+  "title_accuracy": {
+   "exact": 0.875,
+   "fuzzy": 0.875
+  },
+  "items": [
+   {
+    "doc_id": "cc_l00_intro",
+    "page": 2,
+    "ours": {
+     "f1": 0.913,
+     "cer": 0.06,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.81,
+     "cer": 0.261,
+     "urls": []
+    },
+    "title": {
+     "pred": "Інженерія",
+     "gold": "Інженерія",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cc_l00_intro",
+    "page": 9,
+    "ours": {
+     "f1": 0.741,
+     "cer": 0.228,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.571,
+     "cer": 0.653,
+     "urls": []
+    },
+    "title": {
+     "pred": "Підвищення продуктивності",
+     "gold": "Підвищення продуктивності",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cc_l00_intro",
+    "page": 12,
+    "ours": {
+     "f1": 0.963,
+     "cer": 0.011,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.729,
+     "cer": 0.449,
+     "urls": []
+    },
+    "title": {
+     "pred": "Що саме і як підвищуємо",
+     "gold": "Що саме і як підвищуємо",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cc_l00_intro",
+    "page": 14,
+    "ours": {
+     "f1": 0.945,
+     "cer": 0.026,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.825,
+     "cer": 0.26,
+     "urls": []
+    },
+    "title": {
+     "pred": "Concurrent and parallel computing",
+     "gold": "Concurrent and parallel computing",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cc_l00_intro",
+    "page": 21,
+    "ours": {
+     "f1": 0.817,
+     "cer": 0.303,
+     "urls": [
+      "https://indrekis2.blogspot.com/2017/10/blog-post_11.html",
+      "https://spectrum.ieee.org/the-surprising-story-of-the-first-microprocessors",
+      "https://www.4004.com/"
+     ]
+    },
+    "baseline": {
+     "f1": 0.822,
+     "cer": 0.185,
+     "urls": [
+      "https://indrekis2.blogspot.com/2017/10/blog-post_11.html",
+      "https://www.4004.com/"
+     ]
+    },
+    "title": {
+     "pred": "Розглянемо експлуатацію паралелізму рівня бітів на прикладі мікропроцесорів Intel та споріднених: 1971 – 4-бітовий 4004, перший класичний мікропроцесор. Середина 70-х – 8-бітові мікропроцесори, типу 8008 1972-го року",
+     "gold": null,
+     "exact": false
+    }
+   },
+   {
+    "doc_id": "os_l010_processes",
+    "page": 2,
+    "ours": {
+     "f1": 0.954,
+     "cer": 0.023,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.873,
+     "cer": 0.144,
+     "urls": []
+    },
+    "title": {
+     "pred": "Процеси",
+     "gold": "Процеси",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "os_l010_processes",
+    "page": 7,
+    "ours": {
+     "f1": 0.887,
+     "cer": 0.134,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.816,
+     "cer": 0.269,
+     "urls": []
+    },
+    "title": {
+     "pred": "Потоки (threads) — 1",
+     "gold": "Потоки (threads) — 1",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "os_l010_processes",
+    "page": 14,
+    "ours": {
+     "f1": 0.99,
+     "cer": 0.005,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.882,
+     "cer": 0.176,
+     "urls": []
+    },
+    "title": {
+     "pred": "Етапи переключення процесів",
+     "gold": "Етапи переключення процесів",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l02_demoboard",
+    "page": 8,
+    "ours": {
+     "f1": 0.925,
+     "cer": 0.013,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.014,
+     "cer": 1.105,
+     "urls": []
+    },
+    "title": {
+     "pred": "Як запрограмувати мікроконтролер?",
+     "gold": "Як запрограмувати мікроконтролер?",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l02_demoboard",
+    "page": 11,
+    "ours": {
+     "f1": 0.837,
+     "cer": 0.088,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.08,
+     "cer": 0.921,
+     "urls": []
+    },
+    "title": {
+     "pred": "Електричні обмеження GPIO",
+     "gold": "Електричні обмеження GPIO",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l01_machine_model",
+    "page": 9,
+    "ours": {
+     "f1": 0.619,
+     "cer": 0.764,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.498,
+     "cer": 1.205,
+     "urls": []
+    },
+    "title": {
+     "pred": "Взаємодія компонент комп'ютера – доступ до RAM",
+     "gold": "Взаємодія компонент комп'ютера – доступ до RAM",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l01_machine_model",
+    "page": 14,
+    "ours": {
+     "f1": 0.91,
+     "cer": 0.051,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.746,
+     "cer": 0.367,
+     "urls": []
+    },
+    "title": {
+     "pred": "Взаємодія компонент комп'ютера – переривання",
+     "gold": "Взаємодія компонент комп'ютера – переривання",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cpp1_app_cmake",
+    "page": 5,
+    "ours": {
+     "f1": 0.99,
+     "cer": 0.006,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.841,
+     "cer": 0.271,
+     "urls": []
+    },
+    "title": {
+     "pred": "Дуже простий приклад",
+     "gold": "Дуже простий приклад",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cpp1_app_cmake",
+    "page": 7,
+    "ours": {
+     "f1": 0.917,
+     "cer": 0.078,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.829,
+     "cer": 0.235,
+     "urls": []
+    },
+    "title": {
+     "pred": "Аналіз прикладу – 1",
+     "gold": "Аналіз прикладу – 1",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cpp1_app_makefile",
+    "page": 7,
+    "ours": {
+     "f1": 0.971,
+     "cer": 0.052,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.878,
+     "cer": 0.172,
+     "urls": []
+    },
+    "title": {
+     "pred": "Відступ: безпосередній виклик лінкера",
+     "gold": "Відступ: безпосередній виклик лінкера",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cpp1_app_makefile",
+    "page": 9,
+    "ours": {
+     "f1": 0.826,
+     "cer": 0.172,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.618,
+     "cer": 0.234,
+     "urls": []
+    },
+    "title": {
+     "pred": "Виклик make",
+     "gold": "Виклик make",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cpp1_app_makefile",
+    "page": 11,
+    "ours": {
+     "f1": 0.995,
+     "cer": 0.008,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.782,
+     "cer": 0.199,
+     "urls": []
+    },
+    "title": {
+     "pred": "Найпростіший Makefile",
+     "gold": "Найпростіший Makefile",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "os_p01_bash",
+    "page": 10,
+    "ours": {
+     "f1": 0.874,
+     "cer": 0.213,
+     "urls": [
+      "https://en.wikipedia.org/wiki/Shebang_(Unix)",
+      "https://unix.stackexchange.com/a/29620"
+     ]
+    },
+    "baseline": {
+     "f1": 0.775,
+     "cer": 0.13,
+     "urls": [
+      "https://en.wikipedia.org/wiki/Shebang_(Unix",
+      "https://unix.stackexchange.com/a/29620`"
+     ]
+    },
+    "title": {
+     "pred": "Shebang",
+     "gold": "Shebang",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "Lek_2_2018",
+    "page": 4,
+    "ours": {
+     "f1": 0.75,
+     "cer": 0.45,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.778,
+     "cer": 0.367,
+     "urls": []
+    },
+    "title": {
+     "pred": "обчислювальної. машини (1)",
+     "gold": "Багаторівнева організація обчислювальної машини (1)",
+     "exact": false
+    }
+   },
+   {
+    "doc_id": "Lek_12_2018",
+    "page": 5,
+    "ours": {
+     "f1": 1.0,
+     "cer": 0.0,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.651,
+     "cer": 0.731,
+     "urls": []
+    },
+    "title": {
+     "pred": "Види пам'яті. ОЗП (2)",
+     "gold": "Види пам'яті. ОЗП (2)",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "Lec_1_OS",
+    "page": 4,
+    "ours": {
+     "f1": 1.0,
+     "cer": 0.0,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.959,
+     "cer": 0.025,
+     "urls": []
+    },
+    "title": {
+     "pred": "Список розділів (2)",
+     "gold": "Список розділів (2)",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "Lec_7",
+    "page": 6,
+    "ours": {
+     "f1": 0.987,
+     "cer": 0.003,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.974,
+     "cer": 0.03,
+     "urls": []
+    },
+    "title": {
+     "pred": "Структура файлової системи (3)",
+     "gold": "Структура файлової системи (3)",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "Presentation3",
+    "page": 4,
+    "ours": {
+     "f1": 1.0,
+     "cer": 0.0,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.929,
+     "cer": 0.171,
+     "urls": []
+    },
+    "title": {
+     "pred": "Another language",
+     "gold": "Another language",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "BLE",
+    "page": 3,
+    "ours": {
+     "f1": 1.0,
+     "cer": 0.0,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.967,
+     "cer": 0.116,
+     "urls": []
+    },
+    "title": {
+     "pred": "Причини низького споживання потужності",
+     "gold": "Причини низького споживання потужності",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "os_l040_Linux_internals",
+    "page": 6,
+    "ours": {
+     "f1": 0.985,
+     "cer": 0.018,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.026,
+     "cer": 1.075,
+     "urls": []
+    },
+    "title": {
+     "pred": null,
+     "gold": null,
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l03_bool",
+    "page": 5,
+    "ours": {
+     "f1": 0.899,
+     "cer": 0.05,
+     "urls": [
+      "https://en.wikipedia.org/wiki/Functional_completeness"
+     ]
+    },
+    "baseline": {
+     "f1": 0.174,
+     "cer": 0.929,
+     "urls": [
+      "https://en.wikipedia.org/wiki/Functional_completeness"
+     ]
+    },
+    "title": {
+     "pred": "Повні системи булевих функцій",
+     "gold": "Повні системи булевих функцій",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l04_simple_logic",
+    "page": 3,
+    "ours": {
+     "f1": 0.865,
+     "cer": 0.163,
+     "urls": [
+      "http://www.righto.com/2020/07/inside-8086-processor-tiny-charge-pumps.html#fn:benefits"
+     ]
+    },
+    "baseline": {
+     "f1": 0.362,
+     "cer": 0.818,
+     "urls": [
+      "http://www.righto.com/2020/07/inside-8086-processor-tiny-charge-p"
+     ]
+    },
+    "title": {
+     "pred": "Логічний вентиль – logical gate",
+     "gold": "Логічний вентиль – logical gate",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_l05_sequential_logic",
+    "page": 9,
+    "ours": {
+     "f1": 0.859,
+     "cer": 0.247,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.092,
+     "cer": 1.288,
+     "urls": []
+    },
+    "title": {
+     "pred": "D-тригер із спрацюванням по фронту",
+     "gold": "D-тригер із спрацюванням по фронту",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "pok_lab01_03_strings",
+    "page": 3,
+    "ours": {
+     "f1": 0.333,
+     "cer": 0.778,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.684,
+     "cer": 0.646,
+     "urls": []
+    },
+    "title": {
+     "pred": "2 Завдання 1: написати, мовою С++, бібліотеку для роботи із стрі- чками 41",
+     "gold": null,
+     "exact": false
+    }
+   },
+   {
+    "doc_id": "cc_lab01_cpp_perf",
+    "page": 4,
+    "ours": {
+     "f1": 0.971,
+     "cer": 0.014,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.965,
+     "cer": 0.02,
+     "urls": []
+    },
+    "title": {
+     "pred": "0.2 Завдання (продовження)",
+     "gold": null,
+     "exact": false
+    }
+   },
+   {
+    "doc_id": "cc_lab10_cpp_parsing",
+    "page": 5,
+    "ours": {
+     "f1": 0.934,
+     "cer": 0.046,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.929,
+     "cer": 0.073,
+     "urls": []
+    },
+    "title": {
+     "pred": "1.2.3 Особливості роботи з текстом",
+     "gold": "1.2.3 Особливості роботи з текстом",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cc_lab30_MPI_PDF",
+    "page": 7,
+    "ours": {
+     "f1": 0.965,
+     "cer": 0.016,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.949,
+     "cer": 0.025,
+     "urls": []
+    },
+    "title": {
+     "pred": "x (продовження)",
+     "gold": null,
+     "exact": false
+    }
+   },
+   {
+    "doc_id": "Presentation1",
+    "page": 4,
+    "ours": {
+     "f1": 1.0,
+     "cer": 0.012,
+     "urls": [
+      "http://www.microkernel.info/",
+      "https://github.com/EmcraftSystems/linux-emcraft",
+      "https://github.com/freebsd/freebsd",
+      "https://github.com/torvalds/linux",
+      "https://pdos.csail.mit.edu/6.828/2019/xv6.html",
+      "https://wiki.osdev.org/Getting_Started",
+      "https://www.freertos.org/",
+      "https://www.mbed.com/en/platform/mbed-os/",
+      "https://www.zephyrproject.org/"
+     ]
+    },
+    "baseline": {
+     "f1": 0.692,
+     "cer": 0.306,
+     "urls": [
+      "https://www.freertos.org/</u",
+      "https://www.mbed.com/en/platorm/mbedf</u",
+      "https://www.zephyrproject.org/</u"
+     ]
+    },
+    "title": {
+     "pred": "How I can get a Kernel?",
+     "gold": "How I can get a Kernel?",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "os_l020_files",
+    "page": 4,
+    "ours": {
+     "f1": 0.766,
+     "cer": 0.499,
+     "urls": [
+      "https://man7.org/linux/man-pages/man0/fcntl.h.0p.html",
+      "https://man7.org/linux/man-pages/man0/stdlib.h.0p.html",
+      "https://man7.org/linux/man-pages/man0/sys_stat.h.0p.html",
+      "https://man7.org/linux/man-pages/man0/unistd.h.0p.html"
+     ]
+    },
+    "baseline": {
+     "f1": 0.89,
+     "cer": 0.231,
+     "urls": [
+      "https://man7.org/linux/man-pages/man0/fcntl.h.0p.html",
+      "https://man7.org/linux/man-pages/man0/stdlib.h.0p.html",
+      "https://man7.org/linux/man-pages/man0/sys_stat.h.0p.html",
+      "https://man7.org/linux/man-pages/man0/unistd.h.0p.html"
+     ]
+    },
+    "title": {
+     "pred": null,
+     "gold": null,
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "cc_l00_intro",
+    "page": 6,
+    "ours": {
+     "f1": 0.92,
+     "cer": 0.219,
+     "urls": [
+      "https://dev.to/sahilrajput/how-latency-numbers-changes-from-1990-to-2020-173n",
+      "https://gist.github.com/jboner/2841832",
+      "https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html"
+     ]
+    },
+    "baseline": {
+     "f1": 0.688,
+     "cer": 0.538,
+     "urls": [
+      "https://dev.to/sahilrajp<br",
+      "https://gist.github.com/j<br",
+      "https://people.eecs.berkeley.edu/~<br"
+     ]
+    },
+    "title": {
+     "pred": "Детальніше про часи доступу",
+     "gold": "Детальніше про часи доступу",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "Presentation4",
+    "page": 5,
+    "ours": {
+     "f1": 0.785,
+     "cer": 0.244,
+     "urls": [
+      "https://www.ni.com/ru-ru/innovations/white-papers/12/do-i-need-a-real-time-system-.html"
+     ]
+    },
+    "baseline": {
+     "f1": 0.842,
+     "cer": 0.573,
+     "urls": [
+      "https://www.ni.com/ru-ru/innovations/white-papers/12/do-i-need-a-real-time-system-.html`</u"
+     ]
+    },
+    "title": {
+     "pred": "Hard/Soft real time",
+     "gold": "Hard/Soft real time",
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "syllabus_pok",
+    "page": 2,
+    "ours": {
+     "f1": 0.982,
+     "cer": 0.005,
+     "urls": [
+      "https://learn.ucu.edu.ua/course/view.php?id=1027"
+     ]
+    },
+    "baseline": {
+     "f1": 0.948,
+     "cer": 0.02,
+     "urls": [
+      "https://learn.ucu.edu.ua/course/view.php?id=1027</u"
+     ]
+    },
+    "title": {
+     "pred": null,
+     "gold": null,
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "syllabus_os",
+    "page": 2,
+    "ours": {
+     "f1": 0.947,
+     "cer": 0.068,
+     "urls": [
+      "https://s3.eu-central-1.amazonaws.com/ucu.edu.ua/wp-content/uploads/2024/02/2024.-Polozhennya-pro-zapobigannya-akademichnomu-plagiatu-ta-inshym-vydam-porushen.pdf"
+     ]
+    },
+    "baseline": {
+     "f1": 0.898,
+     "cer": 0.078,
+     "urls": []
+    },
+    "title": {
+     "pred": null,
+     "gold": null,
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "syllabus_aks",
+    "page": 4,
+    "ours": {
+     "f1": 0.966,
+     "cer": 0.056,
+     "urls": [
+      "https://s3.eu-central-1.amazonaws.com/ucu.edu.ua/wp-content/uploads/2024/02/2024.-Polozhennya-pro-zapobigannya-akademichnomu-plagiatu-ta-inshym-vydam-porushen.pdf"
+     ]
+    },
+    "baseline": {
+     "f1": 0.76,
+     "cer": 0.068,
+     "urls": []
+    },
+    "title": {
+     "pred": null,
+     "gold": null,
+     "exact": true
+    }
+   },
+   {
+    "doc_id": "requirements_2024_2025",
+    "page": 5,
+    "ours": {
+     "f1": 0.805,
+     "cer": 0.124,
+     "urls": []
+    },
+    "baseline": {
+     "f1": 0.699,
+     "cer": 0.351,
+     "urls": []
+    },
+    "title": {
+     "pred": "Практичні завдання",
+     "gold": "Практичні завдання",
+     "exact": true
+    }
+   }
+  ]
+ },
+ "auto_links": {
+  "docs_with_links": 57,
+  "links": 1948,
+  "found": 1948,
+  "recall": 1.0,
+  "per_doc": [
+   {
+    "doc_id": "pok_aks_os_l00_intro",
+    "links": 2,
+    "found": 2,
+    "missing": []
+   },
+   {
+    "doc_id": "os_p01_bash",
+    "links": 30,
+    "found": 30,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_l01_machine_model",
+    "links": 73,
+    "found": 73,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_l01_physics_basics",
+    "links": 1,
+    "found": 1,
+    "missing": []
+   },
+   {
+    "doc_id": "Lek_2_2018",
+    "links": 18,
+    "found": 18,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_l02_demoboard",
+    "links": 13,
+    "found": 13,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_l03_bool",
+    "links": 13,
+    "found": 13,
+    "missing": []
+   },
+   {
+    "doc_id": "Lek_4b_2018",
+    "links": 1,
+    "found": 1,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_l04_simple_logic",
+    "links": 22,
+    "found": 22,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_l05_sequential_logic",
+    "links": 20,
+    "found": 20,
+    "missing": []
+   },
+   {
+    "doc_id": "Lek_12_2018",
+    "links": 14,
+    "found": 14,
+    "missing": []
+   },
+   {
+    "doc_id": "BLE",
+    "links": 27,
+    "found": 27,
+    "missing": []
+   },
+   {
+    "doc_id": "PSoC",
+    "links": 20,
+    "found": 20,
+    "missing": []
+   },
+   {
+    "doc_id": "PSoC_Sensors_2023",
+    "links": 11,
+    "found": 11,
+    "missing": []
+   },
+   {
+    "doc_id": "cpp1_app_autotools",
+    "links": 8,
+    "found": 8,
+    "missing": []
+   },
+   {
+    "doc_id": "cpp1_app_binutils_n_gcc",
+    "links": 50,
+    "found": 50,
+    "missing": []
+   },
+   {
+    "doc_id": "cpp1_app_cmake",
+    "links": 79,
+    "found": 79,
+    "missing": []
+   },
+   {
+    "doc_id": "cpp1_app_libraries",
+    "links": 30,
+    "found": 30,
+    "missing": []
+   },
+   {
+    "doc_id": "cpp1_app_makefile",
+    "links": 14,
+    "found": 14,
+    "missing": []
+   },
+   {
+    "doc_id": "lapp_qc",
+    "links": 1,
+    "found": 1,
+    "missing": []
+   },
+   {
+    "doc_id": "os_pok_syscalls",
+    "links": 59,
+    "found": 59,
+    "missing": []
+   },
+   {
+    "doc_id": "pok_lab01_03_strings",
+    "links": 17,
+    "found": 17,
+    "missing": []
+   },
+   {
+    "doc_id": "requirements_2024_2025",
+    "links": 1,
+    "found": 1,
+    "missing": []
+   },
+   {
+    "doc_id": "syllabus_pok",
+    "links": 2,
+    "found": 2,
+    "missing": []
+   },
+   {
+    "doc_id": "x86_arch",
+    "links": 150,
+    "found": 150,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l00_intro",
+    "links": 36,
+    "found": 36,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l10_cpu_isa",
+    "links": 28,
+    "found": 28,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l10_cpu_uarch",
+    "links": 151,
+    "found": 151,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l13_ram",
+    "links": 179,
+    "found": 179,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l17_cache",
+    "links": 151,
+    "found": 151,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l25_simd",
+    "links": 4,
+    "found": 4,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l30_multicomp",
+    "links": 54,
+    "found": 54,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l40_par_prog",
+    "links": 14,
+    "found": 14,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l50_sync",
+    "links": 80,
+    "found": 80,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l60_MPI",
+    "links": 29,
+    "found": 29,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_l70_cuda",
+    "links": 44,
+    "found": 44,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_lab01_cpp_perf",
+    "links": 25,
+    "found": 25,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_lab10_cpp_parsing",
+    "links": 6,
+    "found": 6,
+    "missing": []
+   },
+   {
+    "doc_id": "cc_lab30_MPI_PDF",
+    "links": 10,
+    "found": 10,
+    "missing": []
+   },
+   {
+    "doc_id": "syllabus_aks",
+    "links": 3,
+    "found": 3,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l000_intro",
+    "links": 3,
+    "found": 3,
+    "missing": []
+   },
+   {
+    "doc_id": "Lec_7",
+    "links": 10,
+    "found": 10,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l010_processes",
+    "links": 30,
+    "found": 30,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l020_files",
+    "links": 69,
+    "found": 69,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l025_signals",
+    "links": 14,
+    "found": 14,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l030_IPC",
+    "links": 39,
+    "found": 39,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l033_async",
+    "links": 72,
+    "found": 72,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l0XX_FS",
+    "links": 20,
+    "found": 20,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l040_Linux_internals",
+    "links": 24,
+    "found": 24,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l0XX_GUI_1_overview",
+    "links": 42,
+    "found": 42,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l0XX_GUI_2_X_Window",
+    "links": 42,
+    "found": 42,
+    "missing": []
+   },
+   {
+    "doc_id": "os_l0XX_GUI_3_Wayland",
+    "links": 32,
+    "found": 32,
+    "missing": []
+   },
+   {
+    "doc_id": "Presentation1",
+    "links": 20,
+    "found": 20,
+    "missing": []
+   },
+   {
+    "doc_id": "Presentation2",
+    "links": 9,
+    "found": 9,
+    "missing": []
+   },
+   {
+    "doc_id": "Presentation3",
+    "links": 11,
+    "found": 11,
+    "missing": []
+   },
+   {
+    "doc_id": "Presentation4",
+    "links": 19,
+    "found": 19,
+    "missing": []
+   },
+   {
+    "doc_id": "syllabus_os",
+    "links": 2,
+    "found": 2,
+    "missing": []
+   }
+  ]
+ }
+}

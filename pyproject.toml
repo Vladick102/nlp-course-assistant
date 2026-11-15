@@ -1,0 +1,51 @@
+[project]
+name = "course-assistant"
+version = "0.1.0"
+description = "Grounded Ukrainian Q&A over the POK / AKS / OS course materials"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pymupdf>=1.24",
+    "pymupdf4llm>=0.0.17",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "openai>=1.40",
+    "tenacity>=8.3",
+    "numpy>=1.26",
+    "rank-bm25>=0.2.2",
+    "pymorphy3>=2.0",
+    "pymorphy3-dicts-uk>=2.4",
+    "sentence-transformers>=3.0",
+    "torch>=2.3",
+    "langdetect>=1.0.9",
+    "streamlit>=1.37",
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "pandas>=2.2",
+    "imagehash>=4.3",
+    "pillow>=10.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.2", "ruff>=0.5"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["SIM105"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

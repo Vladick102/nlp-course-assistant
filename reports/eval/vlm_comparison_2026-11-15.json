@@ -1,0 +1,1717 @@
+{
+ "date": "2026-11-15",
+ "gold_file": "eval/data/review/figure_gold.jsonl",
+ "gold_status": "DRAFT, not yet reviewed by a human",
+ "n_items": 30,
+ "n_decorative_gold": 3,
+ "candidates": [
+  "google/gemini-3.6-flash",
+  "anthropic/claude-sonnet-5.5",
+  "openai/gpt-5.4-mini"
+ ],
+ "judges": {
+  "sonnet": "anthropic/claude-sonnet-5.5",
+  "gpt54": "openai/gpt-5.4"
+ },
+ "prompt_versions": {
+  "vlm_figure": "1",
+  "judge_figure": "1"
+ },
+ "trace_ids": {
+  "google/gemini-3.6-flash": "vlmcmp-gemini-3.6-flash-20261115-164504-20bbc0",
+  "anthropic/claude-sonnet-5.5": "vlmcmp-claude-sonnet-5.5-20261115-164602-4bfa86",
+  "openai/gpt-5.4-mini": "vlmcmp-gpt-5.4-mini-20261115-164659-ac10a6",
+  "judge-sonnet-gemini-3.6-flash": "vlmcmp-judge-sonnet-gemini-3.6-flash-20261115-164804-c360f5",
+  "judge-gpt54-gemini-3.6-flash": "vlmcmp-judge-gpt54-gemini-3.6-flash-20261115-164832-78ef04",
+  "judge-sonnet-claude-sonnet-5.5": "vlmcmp-judge-sonnet-claude-sonnet-5.5-20261115-164902-a59d1d",
+  "judge-gpt54-claude-sonnet-5.5": "vlmcmp-judge-gpt54-claude-sonnet-5.5-20261115-164912-122259",
+  "judge-sonnet-gpt-5.4-mini": "vlmcmp-judge-sonnet-gpt-5.4-mini-20261115-164923-87ccf6",
+  "judge-gpt54-gpt-5.4-mini": "vlmcmp-judge-gpt54-gpt-5.4-mini-20261115-164933-33b91d"
+ },
+ "run_spend_usd": 0.052645750000000005,
+ "summary": {
+  "google/gemini-3.6-flash": {
+   "n_items": 30,
+   "n_errors": 15,
+   "entity_recall": [
+    0.3984848484848485,
+    0.22344135802469137,
+    0.5775126262626261
+   ],
+   "entity_recall_n": 27,
+   "entity_recall_by_type": {
+    "chart": {
+     "n": 6,
+     "mean": 0.4694444444444444
+    },
+    "circuit": {
+     "n": 6,
+     "mean": 0.16666666666666666
+    },
+    "diagram": {
+     "n": 10,
+     "mean": 0.510909090909091
+    },
+    "photo": {
+     "n": 2,
+     "mean": 0.4166666666666667
+    },
+    "screenshot": {
+     "n": 1,
+     "mean": 1.0
+    },
+    "table": {
+     "n": 2,
+     "mean": 0.0
+    }
+   },
+   "decorative_accuracy": [
+    0.43333333333333335,
+    0.26666666666666666,
+    0.6
+   ],
+   "decorative_correct": 13,
+   "faithfulness": {
+    "sonnet": {
+     "faithfulness": [
+      2.5,
+      2.0,
+      3.0
+     ],
+     "critical_rate": 0.25,
+     "n_judged": 4,
+     "n_judge_errors": 10
+    },
+    "gpt54": {
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "critical_rate": 1.0,
+     "n_judged": 2,
+     "n_judge_errors": 12
+    }
+   },
+   "faithfulness_mean_of_judges": [
+    1.5,
+    1.5,
+    1.5
+   ],
+   "judge_spearman_rho": null,
+   "judge_spearman_n": 2,
+   "latency_mean_s": 7.6530000000000005,
+   "latency_p95_s": 13.970749999999999,
+   "latency_n_uncached": 10,
+   "cost_per_description_usd": 0.00231325,
+   "projected_1073_usd": 2.4821172500000004,
+   "spend_vlm_usd": 0.025757250000000002,
+   "spend_judges_usd": 0.01194,
+   "models_seen_in_trace": [
+    "google/gemini-3.6-flash"
+   ],
+   "same_family_judge": {
+    "sonnet": false,
+    "gpt54": false
+   }
+  },
+  "anthropic/claude-sonnet-5.5": {
+   "n_items": 30,
+   "n_errors": 23,
+   "entity_recall": [
+    0.11851851851851851,
+    0.02962962962962963,
+    0.23703703703703705
+   ],
+   "entity_recall_n": 27,
+   "entity_recall_by_type": {
+    "chart": {
+     "n": 6,
+     "mean": 0.0
+    },
+    "circuit": {
+     "n": 6,
+     "mean": 0.3333333333333333
+    },
+    "diagram": {
+     "n": 10,
+     "mean": 0.12000000000000002
+    },
+    "photo": {
+     "n": 2,
+     "mean": 0.0
+    },
+    "screenshot": {
+     "n": 1,
+     "mean": 0.0
+    },
+    "table": {
+     "n": 2,
+     "mean": 0.0
+    }
+   },
+   "decorative_accuracy": [
+    0.23333333333333334,
+    0.1,
+    0.4
+   ],
+   "decorative_correct": 7,
+   "faithfulness": {
+    "sonnet": {
+     "faithfulness": null,
+     "critical_rate": null,
+     "n_judged": 0,
+     "n_judge_errors": 4
+    },
+    "gpt54": {
+     "faithfulness": null,
+     "critical_rate": null,
+     "n_judged": 0,
+     "n_judge_errors": 4
+    }
+   },
+   "faithfulness_mean_of_judges": null,
+   "judge_spearman_rho": null,
+   "judge_spearman_n": 0,
+   "latency_mean_s": 3.868,
+   "latency_p95_s": 4.912,
+   "latency_n_uncached": 2,
+   "cost_per_description_usd": 0.0051634285714285705,
+   "projected_1073_usd": 5.540358857142857,
+   "spend_vlm_usd": 0.010942,
+   "spend_judges_usd": 0.0,
+   "models_seen_in_trace": [
+    "anthropic/claude-sonnet-5.5"
+   ],
+   "same_family_judge": {
+    "sonnet": true,
+    "gpt54": false
+   }
+  },
+  "openai/gpt-5.4-mini": {
+   "n_items": 30,
+   "n_errors": 23,
+   "entity_recall": [
+    0.0962962962962963,
+    0.014814814814814815,
+    0.2
+   ],
+   "entity_recall_n": 27,
+   "entity_recall_by_type": {
+    "chart": {
+     "n": 6,
+     "mean": 0.0
+    },
+    "circuit": {
+     "n": 6,
+     "mean": 0.0
+    },
+    "diagram": {
+     "n": 10,
+     "mean": 0.22000000000000003
+    },
+    "photo": {
+     "n": 2,
+     "mean": 0.0
+    },
+    "screenshot": {
+     "n": 1,
+     "mean": 0.4
+    },
+    "table": {
+     "n": 2,
+     "mean": 0.0
+    }
+   },
+   "decorative_accuracy": [
+    0.23333333333333334,
+    0.1,
+    0.4
+   ],
+   "decorative_correct": 7,
+   "faithfulness": {
+    "sonnet": {
+     "faithfulness": null,
+     "critical_rate": null,
+     "n_judged": 0,
+     "n_judge_errors": 4
+    },
+    "gpt54": {
+     "faithfulness": null,
+     "critical_rate": null,
+     "n_judged": 0,
+     "n_judge_errors": 4
+    }
+   },
+   "faithfulness_mean_of_judges": null,
+   "judge_spearman_rho": null,
+   "judge_spearman_n": 0,
+   "latency_mean_s": 9.9745,
+   "latency_p95_s": 12.15745,
+   "latency_n_uncached": 2,
+   "cost_per_description_usd": 0.001508464285714286,
+   "projected_1073_usd": 1.6185821785714287,
+   "spend_vlm_usd": 0.0040065,
+   "spend_judges_usd": 0.0,
+   "models_seen_in_trace": [
+    "openai/gpt-5.4-mini"
+   ],
+   "same_family_judge": {
+    "sonnet": false,
+    "gpt54": true
+   }
+  }
+ },
+ "items": [
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 1,
+   "visual_type": "decorative",
+   "decorative_gold": true,
+   "entities": [
+    "Прості логічні елементи",
+    "Український католицький університет",
+    "Applied Sciences Faculty",
+    "Олег Фаренюк",
+    "Creative Commons - Attribution Share Alike (CC BY-SA)"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 1,
+   "visual_type": "decorative",
+   "decorative_gold": true,
+   "entities": [
+    "Кеш пам'яті",
+    "Український католицький університет",
+    "Applied Sciences Faculty",
+    "Олег Фаренюк",
+    "Creative Commons - Attribution Share Alike (CC BY-SA)"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "ДЕКОРАТИНЕ",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": null,
+     "judges": {
+      "sonnet": {
+       "faithfulness": 2,
+       "critical_hallucination": false,
+       "reason": "Слайд є титульним («Кеш пам'яті») з логотипами УКУ та Applied Sciences Faculty і приміткою про авторство CC BY-SA. Позначка «ДЕКОРАТИНЕ» з одруківкою є розмитою і не передає вмісту, але не вигадує хибних фактів. Логотипи справді мають здебільшого декоративний характер.",
+       "error": null
+      },
+      "gpt54": {
+       "faithfulness": 1,
+       "critical_hallucination": true,
+       "reason": "Опис не відповідає зображенню: на слайді видно титульний слайд з написом «Кеш пам’яті» та логотипами, а слово «ДЕКОРАТИНЕ» на зображенні відсутнє. Це вигаданий підпис, який суперечить видимому вмісту.",
+       "error": null
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 1,
+   "visual_type": "decorative",
+   "decorative_gold": true,
+   "entities": [
+    "Мікроархітектура CPU",
+    "Український католицький університет",
+    "Applied Sciences Faculty",
+    "Олег Фаренюк",
+    "Creative Commons - Attribution Share Alike (CC BY-SA)"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "ДЕКОРАТВНЕ",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": null,
+     "judges": {
+      "sonnet": {
+       "faithfulness": 2,
+       "critical_hallucination": false,
+       "reason": "Опис складається з одного слова «ДЕКОРАТВНЕ» (з помилкою). Воно загалом відповідає тому, що на слайді є логотипи й титульний вміст, але нічого не повідомляє про зміст: назву «Мікроархітектура CPU», логотип УКУ, логотип Applied Sciences Faculty та ліцензію CC BY-SA. Вигаданих фактів немає.",
+       "error": null
+      },
+      "gpt54": {
+       "faithfulness": 1,
+       "critical_hallucination": true,
+       "reason": "На зображенні не декоративний елемент, а титульний слайд із назвою «Мікроархітектура CPU», логотипами та автором. Опис не відповідає змісту слайда і фактично ігнорує наявні суттєві елементи.",
+       "error": null
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "ДЕКОРАТИВНЕ",
+     "error": null,
+     "output_decorative": true,
+     "decorative_correct": true,
+     "entity_recall": null,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 11,
+   "visual_type": "circuit",
+   "decorative_gold": false,
+   "entities": [
+    "7400 Quad 2-input NAND Gates",
+    "Vcc",
+    "GND",
+    "1A",
+    "1B",
+    "1Y",
+    "2A",
+    "2B",
+    "2Y",
+    "4Y"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 16,
+   "visual_type": "circuit",
+   "decorative_gold": false,
+   "entities": [
+    "7408 – 4 по 2AND",
+    "Vcc",
+    "GND",
+    "1A",
+    "1B",
+    "1Y",
+    "2A",
+    "2B",
+    "2Y",
+    "3A",
+    "3Y"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 34,
+   "visual_type": "circuit",
+   "decorative_gold": false,
+   "entities": [
+    "Напівсуматор",
+    "A",
+    "B",
+    "S",
+    "C"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "Тип: логічна схема\n\nЕлементи та зв'язки: Два входи A і B. Кожен з них розгалужується (позначено крапками) і подається на обидва елементи. Елемент XOR отримує A і B, його вихід позначено S. Елемент AND також отримує A і B, його вихід позначено C.\n\nВисновок: Схема напівсуматора з двох елементів: XOR дає біт суми S, AND дає біт переносу C для двох одно­бітних входів A і B.\n\nПідписи: A | B | S | C",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 3,
+   "visual_type": "circuit",
+   "decorative_gold": false,
+   "entities": [
+    "Асинхронний RS-тригер (SR flip-flop)",
+    "S",
+    "R",
+    "Q",
+    "Q̄",
+    "S - set",
+    "R - reset",
+    "NOR",
+    "Hold state",
+    "Invalid"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 13,
+   "visual_type": "circuit",
+   "decorative_gold": false,
+   "entities": [
+    "T-тригер",
+    "T",
+    "CP",
+    "Q",
+    "Q'",
+    "T=0",
+    "T=1",
+    "0/0",
+    "1/1",
+    "Toggle"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: логічна схема, таблиця істинності, діаграма станів\n\nЕлементи та зв'язки:\n- Угорі ліворуч: позначення схеми T-тригера з входами (T, тактовий символ) та виходами (Q, Q з рискою згори).\n- Угорі праворуч: таблиця істинності T-тригера, яка описує перехід стану Q_next залежно від значень T та поточного Q.\n- У центрі: принципова логічна схема T-тригера на двох елементах AND та двох елементах NOR із перехресними зворотними зв'язками. Входи T і CP підключені до обох елементів AND, виходи Q та Q' повертаються на входи AND.\n- Знизу: діаграма станів із двома станами (0/0 та 1/1). При T=0 стан не змінюється (самопетля), при T=1 відбувається перехід між станами.\n\nВисновок: Слайд демонструє умовне позначення, таблицю істинності, внутрішню логічну структуру на вентилях AND/NOR та автоматну діаграму станів для T-тригера.\n\nПідписи: T | Q | Q_next | Hold state | Toggle | CP | Q' | T=0 | T=1 | 0/0 | 1/1",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "Тип: комбіноване зображення: символ T-тригера, таблиця переходів, логічна схема та діаграма станів\n\nЕлементи та зв'язки:\n- Вгорі ліворуч: умовне позначення тригера з входами T і тактовим входом (трикутник) та виходами Q і Q̄ (з інверсією).\n- Вгорі праворуч: таблиця з колонками T, Q, Q_next. Рядки: 0 0 → 0 (Hold state); 0 1 → 1 (Hold state); 1 0 → 1 (Toggle); 1 1 → 0 (Toggle).\n- Посередині: логічна схема з двома елементами AND і двома елементами NOR (з інверсією на виході), з'єднаними навхрест. Входи T і CP йдуть на обидва AND, а виходи NOR дають Q і Q'. Зворотні зв'язки від Q і Q' йдуть на входи AND.\n- Внизу: діаграма станів із двома станами, 0/0 і 1/1. Петлі в кожному стані позначені T=0. Стрілки між станами в обидва боки позначені T=1.\n\nВисновок: T-тригер зберігає стан при T=0 і інвертує його при T=1. Це показано таблицею, схемою на AND/NOR та діаграмою станів.\n\nПідписи: T | Q | Q_next | Hold state | Toggle | T | CP | Q | Q' | 0/0 | 1/1 | T=0 | T=1",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 31,
+   "visual_type": "circuit",
+   "decorative_gold": false,
+   "entities": [
+    "Feedback Loop",
+    "Clock In",
+    "CLK",
+    "D",
+    "Q",
+    "DFF",
+    "D-type Flip-flop",
+    "Out",
+    "CLK/2",
+    "Output = CLK/2"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 45,
+   "visual_type": "chart",
+   "decorative_gold": false,
+   "entities": [
+    "74193",
+    "CLR",
+    "LOAD",
+    "DATA A B C D",
+    "UP",
+    "DOWN",
+    "QA QB QC QD",
+    "COUNT UP",
+    "COUNT DOWN"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: часова діаграма\n\nЕлементи та зв'язки:\n- Керуючі входи зверху: CLR (скидання) та інверсний LOAD (паралельне завантаження).\n- Вхідні дані DATA: сигнали A, B, C, D.\n- Входи лічби: UP (лічба вгору) та DOWN (лічба вниз).\n- Виходи OUTPUTS: лінії QA, QB, QC, QD, а також інверсний CO (переповнення) та інверсний BO (позичка).\n- Нижня часова вісь показує послідовність режимів: CLEAR (значення 0), PRESET (завантаження значення 13), COUNT UP (лічба 14, 15, 0, 1, 2) та COUNT DOWN (лічба 1, 0, 15, 14, 13).\n\nВисновок:\nЧасова діаграма демонструє роботу 4-бітного лічильника 74193 у різних режимах: очищення (CLEAR), попереднього встановлення (PRESET), прямиФормування сигналів переповнення CO та позички BO відбувається при досягненні граничних значень.\n\nПідписи:\nCLR | LOAD | DATA | A | B | C | D | UP | DOWN | OUTPUTS | QA | QB | QC | QD | CO | BO | SEQUENCE ILLUSTRATED | CLEAR | PRESET | COUNT UP | COUNT DOWN | 0 | 13 | 14 | 15 | 0 | 1 | 2 | 1 | 0 | 15 | 14 | 13",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "faithfulness": 3,
+       "critical_hallucination": true,
+       "reason": "Загальна структура діаграми (CLR, LOAD, DATA A–D, UP, DOWN, QA–QD, CO, BO, режими) передана правильно. Але в описі вказано значення PRESET 13 і послідовність COUNT UP 14, 15, 0, 1, 2, а на зображенні перед PRESET стоїть «12», і є лише «13» наприкінці COUNT DOWN. Також опис упевнено каже, що лічба вниз іде «1, 0, 15, 14, 13», і це збігається, але висновок обірваний («прямиФормування»), а твердження про PRESET=13 суперечить зображенню.",
+       "error": null
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 63,
+   "visual_type": "table",
+   "decorative_gold": false,
+   "entities": [
+    "74148 — таблиця істинності",
+    "INPUTS",
+    "EI",
+    "0",
+    "1",
+    "2",
+    "7",
+    "A2"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 58,
+   "visual_type": "chart",
+   "decorative_gold": false,
+   "entities": [
+    "74595 — діаграма",
+    "SHCP",
+    "DS",
+    "STCP",
+    "MR",
+    "OE",
+    "Q0",
+    "Q1",
+    "Q6",
+    "Q7",
+    "Q7S",
+    "Z-state"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: часова діаграма\n\nЕлементи та зв'язки:\n- Керівні та вхідні сигнали: SHCP (зсувний тактовий імпульс), DS (послідовні дані), STCP (зберігаючий тактовий імпульс), MR (скидання, активний низький), OE (дозвіл виходу, активний низький).\n- Вихідні сигнали: паралельні виходи Q0, Q1, Q6, Q7 та послідовний вихід Q7S.\n- Вертикальні пунктирні та суцільні лінії зв'язку показують синхронізацію фронтів тактових імпульсів з зміною станів виходів та переходом виходів у високоімпедансний стан (Z-state) при високому рівні OE.\n\nВисновок: Часова діаграма ілюструє роботу зсувного регістра 74595, показуючи взаємодію тактових імпульсів зсуву та запису, сигналів скидання, дозволу виходу та формування станів виходів Q0-Q7 і Q7S.\n\nПідписи: SHCP | DS | STCP | MR | OE | Q0 | Q1 | Q6 | Q7 | Q7S | Z-state",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.9166666666666666,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 4,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Immediate value",
+    "Memory interface",
+    "Mem. addr. reg.",
+    "Mem. data reg.",
+    "ALU",
+    "Shifter",
+    "Decoder",
+    "IR",
+    "PC",
+    "R00"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: блок-схема\n\nЕлементи та зв'язки:\n- Блок додавання з константою 4 подає значення на MUX перед реєстром PC.\n- PC передає адресу на Fetch mem. unit, а також на MUX (для обчислення наступного значення) та зворотний шинний зв'язок.\n- IR з'єднаний із Decoder, який керує Instruction reg.; черізо червоні лінії керування (ALU operation code, Shifter operation, Mem. interface operation (R/W/nop)) сигнали йдуть до DEMUX, MUX, ALU, Shifter та Memory interface.\n- Регистровий файл (R00, R01, ...) підключений між DEMUX 0 та MUX 0.\n- Значення з MUX 0 та Immediate value подаються через MUX на ALU, далі через Shifter дані повертаються на шину даних, до Memory interface або назад у регістри.\n- Fetch mem. unit та Memory interface підключені до Memory Bus та блоку RAM.\n\nВисновок:\nСхема демонструє структурну організацію простого процесора з розділенням тракту даних (PC, регістри, ALU, Shifter) та сигналів керування від декодера команд.\n\nПідписи:\n+ | 4 | MUX | PC | IR | Decoder | Instruction reg. | Imm. | DEMUX 0 | R00 | R01 | MUX 0 | ALU | Shifter | Memory interface | Mem. addr. reg. | Mem. data reg. | Fetch mem. unit | Addr | Cmd. | Enable | Immediate value | ALU operation code | Shifter operation | Mem. interface operation (R/W/nop) | Memory Bus | RAM",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 21,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Fetch",
+    "Decode",
+    "Execute",
+    "Write Back",
+    "Memory interface",
+    "Immediate value",
+    "Memory Bus",
+    "RAM",
+    "ALU",
+    "Shifter"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 40,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Prefetch Buffer",
+    "Instruction Cache",
+    "Decoder and dispatch",
+    "Branch Predictor",
+    "FPU",
+    "Data cache",
+    "Writeback",
+    "Memory Bus",
+    "RAM",
+    "Pentium-I (1993)"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: блок-схема\n\nЕлементи та зв'язки:\n- Блоки Instruction Cache та Prefetch Buffer з'єднані з Memory Bus та передають дані до Queues.\n- Після Queues знаходиться блок Decoder and pairing checker, який розгалужується на два паралельні конвеєри: U pipeline та V pipeline.\n- Верхній конвеєр (U pipeline) містить блоки AGU U, ALU U, Writeback unit U та з'єднаний з FPU.\n- Нижній конвеєр (V pipeline) містить блоки AGU V, ALU V та Writeback unit V.\n- Блоки з'єднані з Branch Predictor, Data cache та через Memory Bus із блоком RAM.\n\nВисновок:\nСхема демонструє архітектуру двох паралельних конвеєрів (U pipeline та V pipeline) у процесорі Pentium-I для одночасного виконання двох команд за такт.\n\nПідписи:\nInstruction Cache | Prefetch Buffer | Queues | Decoder and pairing checker | FPU | AGU U | ALU U | Writeback unit U | AGU V | ALU V | Writeback unit V | Branch Predictor | Memory Bus | Data cache | V pipeline | U pipeline | RAM",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.8,
+     "judges": {
+      "sonnet": {
+       "faithfulness": 3,
+       "critical_hallucination": false,
+       "reason": "Загалом опис відповідає схемі Pentium-I з двома конвеєрами (U та V), назви блоків названо переважно правильно. Але зв'язки подано неточно: Instruction Cache і Prefetch Buffer зображено без прямого з'єднання з Memory Bus у тому вигляді, як у описі. Розташування блоків (верхній U з FPU, нижній V) і вказані з'єднання з Branch Predictor та Data cache описані неповно й місцями припущені. Мітку «V pipeline / U pipeline» справа передано поверхово.",
+       "error": null
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "Тип: блок-схема (мікроархітектура Pentium-I з двома конвеєрами)\n\nЕлементи та зв'язки:\n- Знизу шина Memory Bus з'єднує RAM, Instruction Cache і Branch Predictor.\n- Далі йде ланцюжок: Instruction Cache → Prefetch Buffer → Queues → Decoder and pairing checker.\n- Decoder розгалужується на два паралельні конвеєри. Кожен складається з AGU → ALU → Writeback unit.\n- Верхній конвеєр позначений як U pipeline, нижній як V pipeline (праворуч фігурні дужки). Обидва виходять у спільний Data cache, який з'єднаний із Memory Bus.\n- Блок FPU розташований зверху і з'єднаний з обома конвеєрами. Пунктирна горизонтальна лінія розділяє U і V конвеєри.\n\nВисновок: у Pentium-I після спільного декодування команди розподіляються між двома паралельними цілочисельними конвеєрами (U і V), які мають власні AGU, ALU та Writeback unit. Вони спільно використовують Data cache та FPU, тому за такт можна виконати до двох команд.\n\nПідписи: FPU | Prefetch Buffer | Queues | Decoder and pairing checker | AGU U | ALU U | Writeback unit U | AGU V | ALU V | Writeback unit V | Data cache | U pipeline | V pipeline | Instruction Cache | Branch Predictor | Memory Bus | RAM",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.8,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "Тип: блок-схема\n\nЕлементи та зв'язки:  \n- Зліва показано `Instruction Cache`, над ним/поруч `Prefetch Buffer`; між ними та центральною частиною йде лінія через `Memory Bus`.  \n- У центрі є `Branch Predictor` і вертикальний блок `Queue`, далі два паралельні конвеєри з кількома блоками `ALU` та `AGU`.  \n- Над виконавчими блоками розміщено `FPU`, правіше — блоки `Writeback Unit`; ще правіше — `Data cache` і дужка/позначка `V pipeline`.  \n- Унизу праворуч окремо показано `RAM`, підключену до `Memory Bus`.\n\nВисновок:  \nСхема ілюструє Pentium-I з двома паралельними конвеєрами та спільними допоміжними блоками для вибірки, передбачення переходів і роботи з пам’яттю.\n\nПідписи: `FPU` | `Prefetch Buffer` | `Instruction Cache` | `Queue` | `Branch Predictor` | `Data cache` | `Writeback Unit` | `ALU` | `AGU` | `Memory Bus` | `RAM` | `V pipeline`",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.8,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 109,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Front End",
+    "Branch Predictor (BPU)",
+    "L1 Instruction Cache 32KiB 8-Way",
+    "Execution Engine",
+    "Memory Subsystem",
+    "L1 Data Cache 32KiB 8-Way",
+    "Load Buffer",
+    "Store Buffer",
+    "EUs"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 20,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Address",
+    "Tag",
+    "Offset",
+    "Cache",
+    "Data Block",
+    "Flags",
+    "line 0",
+    "line 1",
+    "line 2",
+    "line 3",
+    "Організація кешу — fully associative cache"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: логічна схема\n\nЕлементи та зв'язки:\n- Блок «Address» містить поля «Tag» та «Offset».\n- Від поля «Tag» відходить лінія шини, яка розгалужується до чотирьох компараторів (квадрати з символом «=»).\n- Таблиця «Cache» містить рядки: line 0, line 1, line 2, line 3.\n- Рядки кешу згруповані за стовпчиками: «Data Block» (з осередками word0, word1, word2, word3 у line 1), «Flags» (з прапорцями v, d, s та значеннями v0, v1, v2, v3) та «Tag».\n- Поле «Tag» кожного рядка кешу (line 0 – line 3) з'єднане з відповідним компаратором «=» для паралельного порівняння з полем Tag адреси.\n\nВисновок:\nСхема ілюструє роботу повно-асоціативного кешу, де тег вхідної адреси одночасно порівнюється через окремі компаратори з тегами всіх рядків кешу (line 0 – line 3).\n\nПідписи:\nAddress | Tag | Offset | Cache | Data Block | Flags | v | d | s | Tag | word0 | word1 | word2 | word3 | v0 | v1 | v2 | v3 | line 0 | line 1 | line 2 | line 3 | =",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.9090909090909091,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 26,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Address",
+    "Tag",
+    "Set",
+    "Offset",
+    "Cache",
+    "Data Block",
+    "Flags",
+    "line 0",
+    "line 1",
+    "line 2",
+    "line 3"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 32,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Core 1",
+    "Core 2",
+    "Core N",
+    "L1d",
+    "L1i",
+    "L2",
+    "L3",
+    "GPU",
+    "Memory Controller",
+    "RAM"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 89,
+   "visual_type": "table",
+   "decorative_gold": false,
+   "entities": [
+    "Звідна таблиця TLB",
+    "Data TLB",
+    "Instractions TLB",
+    "sTLB",
+    "i386",
+    "i486",
+    "P6",
+    "NetBurst",
+    "Haswell",
+    "Skylake"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 2,
+   "visual_type": "chart",
+   "decorative_gold": false,
+   "entities": [
+    "Memory wall",
+    "Performance",
+    "Year",
+    "Processor",
+    "Memory",
+    "100,000",
+    "10,000",
+    "1980",
+    "2015"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 4,
+   "visual_type": "chart",
+   "decorative_gold": false,
+   "entities": [
+    "Moore's Law – The number of transistors on integrated circuit chips (1971-2018)",
+    "Transistor count",
+    "Year",
+    "Our World in Data",
+    "Data source: Wikipedia (https://en.wikipedia.org/wiki/Transistor_count)",
+    "50,000,000,000",
+    "Licensed under CC-BY-SA by the author Max Roser"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 46,
+   "visual_type": "chart",
+   "decorative_gold": false,
+   "entities": [
+    "Частка різних типів промахів",
+    "Miss rate per type",
+    "Cache size (KiB)",
+    "One-way",
+    "Two-way",
+    "Four-way",
+    "Capacity",
+    "SPECS2000"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 16,
+   "visual_type": "photo",
+   "decorative_gold": false,
+   "entities": [
+    "Фото з блога Ken Shirriff, microcode control board",
+    "Task addresses (3101 static RAM)",
+    "Task priority",
+    "Empty PROM slots",
+    "Microcode PROMs",
+    "Backplane connection"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: фотографія з анотаціями\n\nЕлементи та зв'язки:\n- Фотографія плат керування мікрокодом Xerox Alto II з електронними компонентами (мікросхемами).\n- Зверху зліва виділено прямокутником мікросхеми з підписом «Task addresses (3101 static RAM)».\n- Зверху справа виділено прямокутником мікросхеми з підписом «Task priority».\n- Внизу зліва вказано на порожні роз'єми з підписом «Empty PROM slots».\n- Внизу по центру вказано на встановлені мікросхеми пам'яті з підписом «Microcode PROMs».\n- Внизу справа вказано на крайовий роз'єм плати з підписом «Backplane connection».\n\nВисновок:\nФотографія демонстраційної плати мікропрограмного керування комп'ютера Xerox Alto з позначенням ключових функціональних блоків: RAM для адрес задач, мікросхем пріоритетів, PROM із мікрокодом та роз'єму системної шини.\n\nПідписи:\nTask addresses (3101 static RAM) | Task priority | Empty PROM slots | Microcode PROMs | Backplane connection | ALTO II CONTROL BOARD (2K)",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.8333333333333334,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 51,
+   "visual_type": "photo",
+   "decorative_gold": false,
+   "entities": [
+    "Mesh Interface",
+    "L3s 1.375M",
+    "L2$ 1M",
+    "L1is 32K",
+    "L1ds 32K",
+    "Load/Store",
+    "Memory Frontend",
+    "Decoder",
+    "Branch Predictor",
+    "Scheduler"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "PSoC",
+   "page": 11,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "PSoC 4 BLE",
+    "MCU Subsystem",
+    "ARM CORTEX-M0",
+    "BLE Subsystem",
+    "Flash (256KB)",
+    "SRAM (32KB)",
+    "Programmable Analog Blocks",
+    "Programmable Digital Blocks",
+    "I/O Subsystem",
+    "Programmable Interconnect and Routing"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: блок-схема\n\nЕлементи та зв'язки:\n- Головний блок PSoC 4 BLE розділений на три основни підсистеми: MCU Subsystem, Programmable Analog/Digital Blocks та I/O Subsystem.\n- MCU Subsystem містить блоки: ARM CORTEX-M0 (48 MHz), BLE Subsystem, Flash (256KB), SRAM (32KB), Serial Wire Debug.\n- Через шину Advanced High-Performance Bus (AHB) MCU Subsystem з'єднується з іншими блоками.\n- Programmable Analog Blocks містять: Opamp x4, SAR¹ ADC, CMP x2, CSD.\n- Programmable Digital Blocks містять: UDB³ x4, TCPWM² x4, SCB⁴ x2, Segment LCD Drive.\n- Планка Programmable Interconnect and Routing з'єднує внутрішню логіку з I/O Subsystem, яка складається з п'яти блоків GPIO (чотири GPIO x8 та один GPIO x4).\n\nВисновок: Схема зображує архітектуру мікроконтролера PSoC 4 BLE, показуючи взаємозв'язок процесорного ядра, пам'яті, аналогових та цифрових периферійних блоків і підсистеми введення-виведення через внутрішні шини та маршрутизацію.\n\nПідписи: Block Diagram | PSoC 4 BLE | MCU Subsystem | ARM CORTEX-M0 48 MHz | BLE Subsystem | Flash (256KB) | SRAM (32KB) | Serial Wire Debug | Advanced High-Performance Bus (AHB) | Programmable Analog Blocks | Opamp x4 | SAR¹ ADC | CMP x2 | CSD | Programmable Digital Blocks | UDB³ x4 | TCPWM² x4 | SCB⁴ x2 | Segment LCD Drive | Programmable Interconnect and Routing | I/O Subsystem | GPIO x8 | GPIO x4",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "pok_l01_physics_basics",
+   "page": 8,
+   "visual_type": "chart",
+   "decorative_gold": false,
+   "entities": [
+    "Світлодіод — LED (Light-emitting diode)",
+    "Anode (A)",
+    "Cathode (K)",
+    "LED and its I-V Characteristics",
+    "Current I (mA)",
+    "Infra-Red",
+    "Red",
+    "Amber",
+    "Green",
+    "Blue"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: графік та схематичні позначення\nЕлементи та зв'язки: \n- Зліва: позначення світлодіода (символ діода зі стрілками випромінювання), анод (A, +) та катод (K, -), вказується напрямок струму (Conventional Current Flow), а також зовнішній вигляд діода з позначенням зрізу (notch) та короткого виводу (k / Short Lead).\n- Справа: графік залежності струму I (mA) від напруги V для різних типів/кольорів світлодіодів (Infra-Red, Red, Amber, Yellow, Green, Blue, White).\n- Пунктирна горизонтальна лінія позначає рівень струму 20 mA.\n\nВисновок: Ілюстрація показує схемні позначення, конструкцію світлодіода та його вольт-амперні характеристики для різних кольорів світіння.\n\nПідписи: Conventional Current Flow | Anode (A) + | - Cathode (K) | or | a | k | notch | (Short Lead) | LED and its I-V Characteristics | Current I (mA) | 5 | 10 | 20 | 30 | 40 | 50 | 1 | 2 | 3 | 4 | 5 | V | Infra-Red | Red | Amber | Yellow | Green | Blue | White | LED Type & Colour",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.9,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    }
+   }
+  },
+  {
+   "doc_id": "Lek_4b_2018",
+   "page": 4,
+   "visual_type": "screenshot",
+   "decorative_gold": false,
+   "entities": [
+    "Вибір системи числення для представлення інформації",
+    "Двійкова система",
+    "булева алгебра",
+    "D = q·n",
+    "q"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: текстовий слайд\nЕлементи та зв'язки: Нумерований список з 4 пунктів, що описує критерії вибору позиційної системи числення з основою q для комп'ютерів (наявність фізичних елементів, економічність системи, трудомісткість і швидкодія, наявність математичного апарату).\nВисновок: Двійкова система числення є найбільш прийнятною для комп'ютерів завдяки спрощенню фізичних елементів, високій швидкодії та наявності булевої алгебри.\nПідписи: Вибір системи числення для представлення інформації | У комп'ютерах в основному використовують однорідні позиційні системи числення. При виборі основи q цих систем враховують такі показники: | 1. Наявність фізичних елементів для зображення цифр системи у вигляді одного з q станів, наприклад, різниці напруг. Зменшення кількості станів спрощує фізичний елемент, тому найбільш прийнятною є двійкова система. | 2. Економічність системи числення. Система з великою основою q забезпечує представлення певного числа меншою кількістю розрядів. Однак при цьому ускладнюється побудова фізичного елементу з великою кількістю станів. Ефективність системи числення з основою q оцінюється кількістю цифрових розрядів D, необхідних для зображення певного числа з довжиною ni, тобто D = q·ni. При цьому враховується, що зменшення значення D призводить до зменшення електронних схем для представлення чисел в комп'ютерах. | 3. Трудомісткість та швидкодія виконання арифметичних операцій. Чим менша основа q, тим менше цифр приймають участь у обчисленні даних і тим вища швидкодія комп'ютера. | 4. Наявність формального математичного апарату для аналізу та синтезу цифрових схем. Таким апаратом для двійкових елементів є булева алгебра. | 4",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "Тип: текстовий слайд без додаткових візуальних схем\n\nЕлементи та зв'язки:  \n- У верхній частині — великий червоний заголовок у два рядки.  \n- Нижче — тонка горизонтальна лінія, що відділяє заголовок від основного тексту.  \n- Основний вміст — абзац із нумерованим списком 1–4, де пункти виділені синім кольором.  \n- У тексті є підкреслення червоним хвилястим маркером для окремих слів, як у перевірці правопису.  \n- У правому нижньому куті — номер слайда 4.\n\nВисновок: Слайд є суто текстовим і містить перелік критеріїв вибору системи числення для представлення інформації. Графічних діаграм, таблиць чи схем немає.\n\nПідписи: Вибір системи числення для представлення інформації | 1. | 2. | 3. | 4. | D = q^i·n_i | 4",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.4,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError('all models failed for role=judge: APIStatusError(\"Error code: 402 - This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 373. To increase, visit https://openrouter.ai/workspaces/default/keys/d149f68965fae0a646638e1823125037744d246"
+      }
+     }
+    }
+   }
+  },
+  {
+   "doc_id": "os_l010_processes",
+   "page": 18,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Ієрархія процесів",
+    "[0]",
+    "init [1]",
+    "Login shell",
+    "Daemon e.g. httpd",
+    "Child",
+    "Grandchild"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: блок-схема (дерево ієрархії)\n\nЕлементи та зв'язки:\n- Корневий вузол [0] з'єднаний лінією з вузлом init [1].\n- Від init [1] ідуть зв'язки до двох вузлів: Daemon (e.g. httpd) (обведений пунктиром) та Login shell.\n- Вузол Login shell породжує три дочірні вузли: Child, Child, Child.\n- Середній вузол Child породжує два вузли наступного рівня: Grandchild та Grandchild.\n\nВисновок: Деревоподібна ієрархія процесів демонструє походження дочірніх процесів та демонів від процесів вищого рівня (init [1] та [0]).\n\nПідписи: [0] | init [1] | Daemon e.g. httpd | Login shell | Child | Child | Child | Grandchild | Grandchild",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": null,
+     "error": "RuntimeError(\"all models failed for role=vlm: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")",
+     "output_decorative": false,
+     "decorative_correct": false,
+     "entity_recall": 0.0,
+     "judges": {}
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "Тип: схема-дерево\nЕлементи та зв'язки: Є верхній вузол «[0]», від нього вниз іде зв’язок до «init [1]».\nВід «init [1]» розходяться гілки до «Daemon e.g. httpd» і до «Login shell».\nВід «Login shell» йдуть три дочірні вузли «Child».\nВід середнього «Child» вниз ідуть два вузли «Grandchild».\nВисновок: Схема показує ієрархію процесів у Unix/POSIX: один процес може створювати дочірні, а ті — наступні нащадки.\nПідписи: [0] | init [1] | Daemon e.g. httpd | Login shell | Child | Child | Child | Grandchild | Grandchild",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 1.0,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError('all models failed for role=judge: APIStatusError(\"Error code: 402 - This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 373. To increase, visit https://openrouter.ai/workspaces/default/keys/d149f68965fae0a646638e1823125037744d246"
+      }
+     }
+    }
+   }
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 116,
+   "visual_type": "diagram",
+   "decorative_gold": false,
+   "entities": [
+    "Архітектура Zen 2 від AMD – актуальна на 2020 рік",
+    "L1",
+    "L2",
+    "L3",
+    "https://en.wikichip.org/wiki/amd/microarchitectures/zen_2"
+   ],
+   "candidates": {
+    "google/gemini-3.6-flash": {
+     "description": "Тип: блок-схема мікроархітектури\n\nЕлементи та зв'язки:\n- Схема розділена на чотири кольорові зони: Front End (жовта), EX (зелена), FP (рожева праворуч), LS (бузкова внизу).\n- Зверху в блоці Front End розташовано модулі передбачення розгалужень, інструкційний кеш (Instruction Cache), декодери (4-way Decoder) та кеш мікрооперацій (Op Cache), які передають дані в Micro-OP Queue та на блок Dispatch.\n- З блоку Dispatch мікрооперації розсіюються на цілочисельні плани виконання (EX) та плани дій над числами з плаваючою крапкою (FP), кожні з яких мають власні черги, Physical Register File, Forwarding Muxes та виконавчі блоки (ALU, AGU, FMA/FADD).\n- Блок LS (Load/Store) підключений до EX і містить Load/Store Queue, L1 Data Cache, а також інтерфейси для зв'язку з пам'яттю L2.\n\nВисновок:\nДеталізована мікроархітектурна схема процесорного ядра AMD Zen 2, що ілюструє повний конвеєр від вибірки й декодування інструкцій (Front End) до їх виконання в цілочисельних (EX) та плаваючих (FP) блоках та роботи з кешем даних (LS).\n\nПідписи:\nFront End | EX | FP | LS | Competitively shared between threads | Watermarked | Statically partitioned",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.4,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "anthropic/claude-sonnet-5.5": {
+     "description": "Тип: блок-схема мікроархітектури CPU (конвеєр AMD Zen 2 з чотирма кольоровими зонами)\n\nЕлементи та зв'язки:\n- Жовта зона Front End (угорі): Next Address Logic з предикторами й BTB, далі Instruction Cache, Instruction Byte Queue, Pick і 4-way Decoder. Паралельно йде Op Cache. Обидва шляхи (через OC/IC mode) сходяться в Micro-OP Queue, потім йдуть Stack Engine/Memfile та Microcode Sequencer/ROM. Усе завершується блоком Dispatch.\n- Зелена зона EX (ліворуч унизу): цілочисельна частина з Rename/Allocate, чотирма ALQ, AGQ, Physical Register File, Forwarding Muxes, ALU0–ALU3 та AGU.\n- Рожева зона FP (праворуч): планувальники з чергами, Physical Register File і блоки FADD та FMA.\n- Фіолетова зона LS (внизу): Load Queue, Store Queue, LD/ST Pick, TLB, DC Tags, L1 Data Cache, MAB, WCB і зв'язок з L2.\n- Товсті сині та червоні стрілки показують основні потоки mops від Front End до зон EX, FP і LS. Дані з L2 надходять в Instruction Cache та L1 Data Cache.\n- Праворуч унизу є легенда з трьох кольорових маркерів, текст дрібний, нерозбірливо.\n\nВисновок: схема показує повний шлях інструкцій у Zen 2: від передбачення адреси й декодування у Front End через dispatch до виконання в цілочисельному, FP та load/store блоках. Окремо видно паралельні шляхи Op Cache та декодера, які сходяться в Micro-OP Queue.\n\nПідписи: Next Address Logic | Instruction Cache | Instruction Byte Queue | Pick | 4-way Decoder | Op Cache | Micro-OP",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.4,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      },
+      "gpt54": {
+       "error": "RuntimeError(\"all models failed for role=judge: APIStatusError('Error code: 402 - This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.')\")"
+      }
+     }
+    },
+    "openai/gpt-5.4-mini": {
+     "description": "Тип: блок-схема\n\nЕлементи та зв'язки:  \n- Велика вертикальна схема мікроархітектури, розбита на кольорові секції для Front End, execution/rename та memory subsystem.  \n- Угорі показано ланцюжок передбачення переходів, ITLB/BTB, Instruction Cache, byte queue, decoder і Op Cache з переходами вниз по конвеєру.  \n- У середній частині видно rename/allocate, queues, schedulers і два Physical Register File, з’єднані стрілками та шинами.  \n- Унизу показано execution блоки ALU/AGU/FMA, load/store path, TLB, data cache та зв’язки до/від L2.  \n- Праворуч є невелика легенда з кольоровими позначками стану блоків; під схемою наведено URL джерела.\n\nВисновок:  \nСлайд візуально показує повну структурну схему Zen 2: шлях інструкцій від front end через dispatch/rename до execution і пам’яті. Основний акцент — на взаємозв’язках між блоками та розподілі по підсистемах.\n\nПідписи:  \nFrontend | Ex | LS | [легенда нерозбірливо] | https://en.wikichip.org/wiki/amd/microarchitectures/zen_2",
+     "error": null,
+     "output_decorative": false,
+     "decorative_correct": true,
+     "entity_recall": 0.4,
+     "judges": {
+      "sonnet": {
+       "error": "RuntimeError('all models failed for role=judge: APIStatusError(\"Error code: 402 - Prompt tokens limit exceeded: 3026 > 2802. To increase, visit https://openrouter.ai/workspaces/default/keys/d149f68965fae0a646638e1823125037744d2463e84140c047cb20692ea0b7e2 and adjust the key\\'s total limit\")')"
+      },
+      "gpt54": {
+       "error": "RuntimeError('all models failed for role=judge: APIStatusError(\"Error code: 402 - This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 373. To increase, visit https://openrouter.ai/workspaces/default/keys/d149f68965fae0a646638e1823125037744d246"
+      }
+     }
+    }
+   }
+  }
+ ]
+}

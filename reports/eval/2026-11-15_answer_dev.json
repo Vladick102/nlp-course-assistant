@@ -1,0 +1,174 @@
+{
+  "preset": "small",
+  "gold_source": {
+    "logistics": "unreviewed draft",
+    "qa": "unreviewed draft",
+    "unanswerable": "unreviewed draft"
+  },
+  "component": "answer",
+  "split": "dev",
+  "run_id": "2026-11-15_nogit_1887d8e5_small",
+  "prompts": {
+    "answer": "2",
+    "gate": "1",
+    "judge_answer": "1",
+    "judge_figure": "1",
+    "logistics": "2",
+    "navigate": "1",
+    "rewrite": "1",
+    "route_rewrite": "1",
+    "router": "1",
+    "verify": "1",
+    "vlm_figure": "1"
+  },
+  "models": {
+    "fast": "inclusionai/ling-3.2-flash:free",
+    "generator": "inclusionai/ling-3.2-flash:free",
+    "vlm": "anthropic/claude-haiku-5.5",
+    "judge": "google/gemini-3.1-flash-lite"
+  },
+  "metrics": {
+    "n": 17,
+    "n_qa": 12,
+    "n_unanswerable": 5,
+    "calls_per_item": 1.8235294117647058,
+    "live_calls_per_item": 1.8235294117647058,
+    "total_calls": 31,
+    "total_live_calls": 31,
+    "models_served": {
+      "inclusionai/ling-3.2-flash:free": 28,
+      "nvidia/nemotron-3-ultra-550b-a55b:free": 3
+    },
+    "latency_s": {
+      "p50": 63.364,
+      "p95": 152.1764,
+      "mean": 67.1774705882353
+    },
+    "qa": {
+      "route_correct": {
+        "value": 0.8333333333333334,
+        "lo": 0.5833333333333334,
+        "hi": 1.0,
+        "n": 12
+      },
+      "abstain_rate_on_answerable": {
+        "value": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 12
+      },
+      "citation_validity_rate": 1.0,
+      "n_citations": 25,
+      "answers_without_citation": {
+        "value": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 10
+      },
+      "gold_chunk_cited_rate": {
+        "value": 0.75,
+        "lo": 0.5,
+        "hi": 1.0,
+        "n": 12
+      },
+      "gold_chunk_cited_rate_among_answered": {
+        "value": 0.9,
+        "lo": 0.7,
+        "hi": 1.0,
+        "n": 10
+      },
+      "gold_chunk_cited_by_type": {
+        "figure": {
+          "n": 3,
+          "value": 1.0
+        },
+        "multi": {
+          "n": 3,
+          "value": 0.6666666666666666
+        },
+        "real": {
+          "n": 3,
+          "value": 0.6666666666666666
+        },
+        "single": {
+          "n": 3,
+          "value": 0.6666666666666666
+        }
+      }
+    },
+    "judged": {
+      "n_items": 12,
+      "n_scored": 12,
+      "n_llm_judged": 10,
+      "n_pending": 0,
+      "mean_correctness": {
+        "value": 3.6666666666666665,
+        "lo": 2.9166666666666665,
+        "hi": 4.333333333333333,
+        "n": 12
+      },
+      "correct_ge4_rate": {
+        "value": 0.75,
+        "lo": 0.5,
+        "hi": 1.0,
+        "n": 12
+      },
+      "key_fact_recall": {
+        "value": 0.6666666666666666,
+        "lo": 0.47222222222222215,
+        "hi": 0.8611111111111112,
+        "n": 12
+      },
+      "faithfulness_claim_level": {
+        "value": 0.9148936170212766,
+        "lo": 0.8085106382978723,
+        "hi": 0.9787234042553191,
+        "n": 47
+      },
+      "faithfulness_item_mean": {
+        "value": 0.9047619047619048,
+        "lo": 0.7879761904761905,
+        "hi": 1.0,
+        "n": 10
+      },
+      "fully_faithful_item_rate": {
+        "value": 0.7,
+        "lo": 0.4,
+        "hi": 1.0,
+        "n": 10
+      },
+      "citation_precision": {
+        "value": 0.8333333333333334,
+        "lo": 0.7142857142857143,
+        "hi": 0.9285714285714286,
+        "n": 42
+      },
+      "language_ok_rate": {
+        "value": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n": 10
+      },
+      "correctness_hist": {
+        "1": 2,
+        "3": 1,
+        "4": 6,
+        "5": 3
+      }
+    },
+    "unanswerable": {
+      "correct_abstain_rate": {
+        "value": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n": 5
+      },
+      "answered_anyway_rate": {
+        "value": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 5
+      }
+    }
+  }
+}

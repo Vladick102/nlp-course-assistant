@@ -1,0 +1,194 @@
+{
+ "date": "2026-11-15",
+ "gold_file": "eval/data/review/figure_gold.jsonl",
+ "n": 30,
+ "entity_recall": [
+  0.7702621452621453,
+  0.6406869288119289,
+  0.8853557599807599
+ ],
+ "missing_description": 4,
+ "n_judged": 0,
+ "items": [
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 1,
+   "entity_recall": 0.0,
+   "missing_description": true
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 1,
+   "entity_recall": 0.0,
+   "missing_description": true
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 1,
+   "entity_recall": 0.0,
+   "missing_description": true
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 11,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 16,
+   "entity_recall": 0.9090909090909091,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 34,
+   "entity_recall": 0.8,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 3,
+   "entity_recall": 0.9,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 13,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 31,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 45,
+   "entity_recall": 0.8888888888888888,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l04_simple_logic",
+   "page": 63,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l05_sequential_logic",
+   "page": 58,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 4,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 21,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 40,
+   "entity_recall": 0.7,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 109,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 20,
+   "entity_recall": 0.9090909090909091,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 26,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 32,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 89,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 2,
+   "entity_recall": 0.8888888888888888,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 4,
+   "entity_recall": 0.5714285714285714,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l17_cache",
+   "page": 46,
+   "entity_recall": 0.75,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 16,
+   "entity_recall": 0.8333333333333334,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 51,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "PSoC",
+   "page": 11,
+   "entity_recall": 1.0,
+   "missing_description": false
+  },
+  {
+   "doc_id": "pok_l01_physics_basics",
+   "page": 8,
+   "entity_recall": 0.9,
+   "missing_description": false
+  },
+  {
+   "doc_id": "Lek_4b_2018",
+   "page": 4,
+   "entity_recall": 0.0,
+   "missing_description": true
+  },
+  {
+   "doc_id": "os_l010_processes",
+   "page": 18,
+   "entity_recall": 0.8571428571428571,
+   "missing_description": false
+  },
+  {
+   "doc_id": "cc_l10_cpu_uarch",
+   "page": 116,
+   "entity_recall": 0.2,
+   "missing_description": false
+  }
+ ]
+}

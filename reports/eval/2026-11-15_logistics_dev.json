@@ -1,0 +1,118 @@
+{
+  "preset": "small",
+  "gold_source": {
+    "logistics": "unreviewed draft",
+    "qa": "unreviewed draft",
+    "unanswerable": "unreviewed draft"
+  },
+  "component": "logistics",
+  "split": "dev",
+  "run_id": "2026-11-15_nogit_1887d8e5_small",
+  "prompts": {
+    "answer": "2",
+    "gate": "1",
+    "judge_answer": "1",
+    "judge_figure": "1",
+    "logistics": "2",
+    "navigate": "1",
+    "rewrite": "1",
+    "route_rewrite": "1",
+    "router": "1",
+    "verify": "1",
+    "vlm_figure": "1"
+  },
+  "models": {
+    "fast": "inclusionai/ling-3.2-flash:free",
+    "generator": "inclusionai/ling-3.2-flash:free",
+    "vlm": "anthropic/claude-haiku-5.5",
+    "judge": "google/gemini-3.1-flash-lite"
+  },
+  "metrics": {
+    "n": 5,
+    "calls_per_item": 2.0,
+    "live_calls_per_item": 1.8,
+    "total_calls": 10,
+    "total_live_calls": 9,
+    "models_served": {
+      "inclusionai/ling-3.2-flash:free": 8,
+      "nvidia/nemotron-3-ultra-550b-a55b:free": 2
+    },
+    "latency_s": {
+      "p50": 44.272,
+      "p95": 124.0514,
+      "mean": 68.7234
+    },
+    "route_correct": {
+      "value": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 5
+    },
+    "source_doc_cited": {
+      "value": 0.8,
+      "lo": 0.4,
+      "hi": 1.0,
+      "n": 5
+    },
+    "judged": {
+      "n_items": 5,
+      "n_scored": 5,
+      "n_llm_judged": 4,
+      "n_pending": 0,
+      "mean_correctness": {
+        "value": 3.2,
+        "lo": 2.0,
+        "hi": 4.4,
+        "n": 5
+      },
+      "correct_ge4_rate": {
+        "value": 0.6,
+        "lo": 0.2,
+        "hi": 1.0,
+        "n": 5
+      },
+      "key_fact_recall": {
+        "value": 0.5333333333333333,
+        "lo": 0.26666666666666666,
+        "hi": 0.7999999999999999,
+        "n": 5
+      },
+      "faithfulness_claim_level": {
+        "value": 0.7272727272727273,
+        "lo": 0.45454545454545453,
+        "hi": 1.0,
+        "n": 11
+      },
+      "faithfulness_item_mean": {
+        "value": 0.7083333333333334,
+        "lo": 0.25,
+        "hi": 1.0,
+        "n": 4
+      },
+      "fully_faithful_item_rate": {
+        "value": 0.5,
+        "lo": 0.0,
+        "hi": 1.0,
+        "n": 4
+      },
+      "citation_precision": {
+        "value": 0.7272727272727273,
+        "lo": 0.45454545454545453,
+        "hi": 1.0,
+        "n": 11
+      },
+      "language_ok_rate": {
+        "value": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n": 4
+      },
+      "correctness_hist": {
+        "1": 1,
+        "2": 1,
+        "4": 2,
+        "5": 1
+      }
+    }
+  }
+}
